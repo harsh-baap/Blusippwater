@@ -9,7 +9,7 @@ document.getElementById("order").addEventListener("click", function () {
     alert("Please fill in all details before ordering.");
     return;
   }
-  const whatsappNumber = "917498886372";
+  const whatsappNumber = "919823847901";
 
   const message = `Hello Blusipp Water %0A
     I would like to place an order.%0A
