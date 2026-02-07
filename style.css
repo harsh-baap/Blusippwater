@@ -21,21 +21,21 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-h2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
 }
 .container {
   position: absolute;
   top: 55%;
   left: 6%;
   transform: translateY(-50%);
-  background-color: #f7fbff;
+  background-color: rgba(239, 238, 238, 0.568);
   width: 340px;
   max-width: 90%;
   padding: 35px;
   border-radius: 12px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.858);
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -59,17 +59,36 @@ input:focus {
   border-radius: 25px;
   border: none;
   cursor: pointer;
-
   background-color: #2a9b81;
   color: white;
   font-size: 16px;
   font-weight: 600;
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+.Cards {
+  position: absolute;
+  top: 50%;
+  right: 6%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#Card1, #Card2 {
+  background-color: rgba(239, 235, 235, 0.377);
+  padding: 20px;
+  border-radius: 12px;
+  width: 350px;
+  max-width: 90%;
+  box-shadow: 0 4px 10px rgba(2, 1, 1, 0.801);
+  transition: all 0.3s ease;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#Card1:hover, #Card2:hover {
+  transform: scale(1.05);
+}
 @media (max-width: 768px) {
   h1 {
     position: static;
@@ -80,6 +99,14 @@ input:focus {
     position: static;
     transform: none;
     margin: 20px auto;
+    width: 70%;
+  }
+  .Cards {
+    position: static;
+    transform: none;
+    margin: 20px auto;
     width: 90%;
+    flex-direction: column;
+    gap: 20px;
   }
 }
